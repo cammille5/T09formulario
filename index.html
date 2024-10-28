@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Formularios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+
+    <main>
+        <section class="formulario">
+            <form autocomplete="on" name="registro">
+                <label> Ingrese su nombre*:</label>
+                <br>
+                <br>
+                <input type="text" required maxlength="50" minlength="10" autocomplete="additional-name" autofocus placeholder="Ingresa tu nombre y apellido">
+                <br>
+                <br>
+                <label> Mensaje:</label>
+                <br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Subir">
+                <br>
+                <input type="number" min="10" max="100" step="10">
+                <br>
+                <input type="range" min="18" max="50" step="1">
+                <br>
+                <input type="password" placeholder="Ingresa contraseña">
+                <br>
+                <input type="radio" name="Opciones">
+                <label> Masculino </label>
+                <input type="radio" name="Opciones">
+                <label> Femenino </label>
+                <br>
+                <h3>Selecciona los productos de interés que te gustan</h3>
+                <br>
+                <input type="checkbox" name="manzana">
+                <label>Manzana</label>
+                <input type="checkbox" name="naranja">
+                <label>Naranja</label>
+                <input type="checkbox" name="fresa">
+                <label>Fresa</label>
+                
+                <br>
+                <h3>Selecciona el país:</h3>
+                <br>
+                <select name="paises" id="paises">
+                    <option value="Perú">Perú</option>
+                    <option value="Francia">Francia</option>
+                    <option value="Colombia">Colombia</option>
+                </select>
+
+                <br>
+                <p>Selecciona una fecha:
+                    <br>
+                    <input type="date">
+                </p>
+            </form>
+        </section>
+
+
+        <section class="mapas">
+            <div class="ubicacion"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.201944817873!2d-77.02741122485769!3d-12.125417443370344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81c605ea5e1%3A0x17328a8b49d37914!2sISIL%20-%20Miraflores!5e1!3m2!1ses-419!2spe!4v1730136270911!5m2!1ses-419!2spe" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        
+        <section class="tablas">
+            <div class="tabla01">
+                <table>
+                    <caption> Lista de Productos</caption>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td>P0001</td>
+                        <td>Arroz</td>
+                        <td>S/ 5.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>P0002</td>
+                        <td>Azúcar</td>
+                        <td>S/ 4.20</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
